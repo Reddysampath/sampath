@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int M,N,i,flag;
+	printf("enter the two numbers:");
+	scanf("%d %d",&M,&N);
+	printf("prime number between %d %d are:",M,N);
+	while(M<N)
+	{
+		flag=0;
+		if(M<=1)
+		{
+			++M;
+			continue;
+		}
+		for(i=2;i<=M/2;++i)
+		{
+			if(M%i==0)
+			{
+				flag=1;
+				break;
+			}
+		}
+	      if(flag==0)
+	            printf("\n%d",M);
+	            ++M;	
+	}
+	return 0; 
+
+}
