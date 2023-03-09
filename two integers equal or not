@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int m,n;
+	printf("enter the two integers:");
+	scanf("%d%d",&m,&n);
+	if(m==n)
+	{
+		printf("%d  integers are equal");
+	}
+	else
+	{
+		printf("%d integers are not equal");
+    }
+    return 0;
+}
